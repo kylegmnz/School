@@ -1,0 +1,177 @@
+body{
+    padding-left: 20%;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(24, 24, 33);
+    color: aliceblue;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+@keyframes sliding{
+    from{
+        transform: translateY(100px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+@keyframes right{
+    from{
+        transform: translateX(-700px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+header {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+padding: 20px 120px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+z-index: 100;
+left: 55%;
+box-shadow: 5px 1px rgb(92, 211, 174);
+animation-name: right;
+animation-duration: 2s;
+}
+
+.navagation a{
+    margin-left: 80px;
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.navagation a:hover{
+    color: rgb(92, 211, 174);
+}
+
+#Aboutme h1{
+    padding-top: 20%;
+    
+   
+}
+
+.About{
+    padding-bottom: 20%;
+    
+}
+
+.About h1{
+    font-size: 80px;
+    
+}
+
+.About #button{
+    
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+    background-color: rgb(92, 211, 174);
+    text-decoration: none;
+    color: black;
+    
+
+}
+
+
+.About{
+    animation-name: sliding;
+    animation-duration: 5s;
+}
+#cat{
+    padding-top: 20%;
+}
+
+.cat{
+
+    padding-bottom: 20%;
+    
+        animation-name: sliding;
+        animation-duration: 4s;
+        animation-timing-function: ease-in-out;
+    
+}
+.button{
+   
+    background-color: rgb(92, 211, 174);
+    width: 100px;
+    border-radius: 30px;
+    height: 50px;    
+    position: absolute;
+    text-align: center;
+    top: 160%;
+    right: 67%;
+    
+}
+.button a{
+    text-decoration: none;
+    color: rgb(16, 16, 16);
+    
+}
+
+.cat p{
+    position: absolute;
+    right: 10%;
+    top: 140%;
+}
+
+.cat img{
+    border-radius: 15px;
+    transition: 0.1s ease-in-out;
+}
+
+.cat img:hover{
+    transform: rotate(5deg);
+    box-shadow: rgb(228, 228, 231) 0px 50px 100px -20px, rgba(255, 255, 255, 0.793) 0px 30px 60px -30px;
+}
+
+#education{
+    padding-top: 20%;
+}
+
+.education{
+    margin-bottom: 50%;
+}
+
+.education h1{
+    text-align: center;
+    font-size: 400%;
+    padding-right: 90px;
+    }
+
+table, th, tr, td{
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+table th{
+    background-color: rgba(92, 211, 174, 0.7);
+    
+}
+table{
+    width: 90%;
+
+}
+
+footer{
+    padding-right: 20%;
+    text-align: center;
+}
+
+footer button{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(92, 211, 174);
+    border: none;
+    border-radius: 25px;
+    transition: 0.2s ease-in-out;
+}
+
+footer button:hover{
+    width: 700px;
+}
